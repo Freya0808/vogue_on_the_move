@@ -1,0 +1,136 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  interpolate-size: allow-keywords;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-family: charm;
+  font-size: 50px;
+  color: burlywood;
+}
+h2 {
+  line-height: 1.25;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+label {
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  font-size: max(1em, 16px);
+  padding: 0;
+  margin: 0;
+}
+
+input:where([type="checkbox"], [type="radio"]) {
+  width: 1em;
+  height: 1em;
+}
+
+textarea {
+  resize: none;
+  min-height: 4lh;
+}
+
+legend {
+  padding: 0;
+}
+
+select,
+::picker(select) {
+  appearance: base-select;
+}
+
+[popover] {
+  margin: revert;
+}
+
+dialog {
+  overscroll-behavior: none;
+
+  &::backdrop {
+    overflow: hidden;
+    overscroll-behavior: contain;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+p {
+  font-family: inter;
+}
+h2,
+h3 {
+  font-family: Playpen Sans Deva;
+  color: beige;
+}
+
+.klik-tekst {
+  font-family: Playpen Sans Deva;
+  font-weight: 800px;
+}
+
+.form {
+  font-family: inter;
+  color: black;
+}
+.formoverskrift {
+  color: #420404;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+.group {
+  border-radius: 10px;
+  border-color: #130101;
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px;
+  margin: 10px;
+}
+.mail {
+  font-family: "Times New Roman", Times, serif;
+  border-radius: 10px;
+  border-color: #130101;
+  margin: 10px;
+}
+.info,
+.scale,
+.mål {
+  margin-left: 10px;
+}
+.scrollboks {
+  padding: 4px;
+}

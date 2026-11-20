@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opsamling | Vogue on the Move</title>
+  <link rel="stylesheet" href="./starter.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./script.js">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="site-logo" href="./"></a>
+      <div class="logo">
+        <a href="index.html">
+          <img src="imgs/logo.png" alt="logo">
+        </a>
+      </div>
+      <nav class="site-nav">
+        <button popovertarget="menu">Menu</button>
+
+        <ul class="menu" id="menu" popover>
+          <li><a href="./" aria-current="page">Forside</a></li>
+          <li><a href="./svg.html">Interaktiv SVG</a></li>
+          <li><a href="./form.html">Formular</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+  <main>
+    <section class="opsamling-page">
+      <div class="opsamling-intro">
+        <h1>Tak for dine svar!</h1>
+        <p>Her kan du se dine svar:</p>
+        <article class="opsamling-placeholder">
+        </article>
+        <p id="test-svar"></p>
+
+        <script>
+          const testParams = new URLSearchParams(window.location.search);
+          document.getElementById("test-svar").textContent =
+            "Dit valgte outfit: " + testParams.get("outfit");
+        </script>
+
+        <div class="actions">
+          <a class="button" href="./form.html">Tilbage til formular</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <h3>VOGUE ON THE MOVE</h3>
+      <p>Mode, kreativitet og fællesskab i hjertet af København. </p>
+
+      <p> © 2026 Vogue on the Move · Alle rettigheder forbeholdes.</p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interaktiv SVG | Eventnavn</title>
+  <link rel="stylesheet" href="./starter.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-content">
+      <a class="site-logo" href="./"></a>
+      <div class="logo">
+        <a href="index.html">
+          <img src="imgs/logo.png" alt="logo">
+        </a>
+      </div>
+
+      <nav class="site-nav">
+        <button popovertarget="menu">Menu</button>
+        <ul class="menu" id="menu" popover>
+          <li><a href="./">Forside</a></li>
+          <li><a href="./svg.html" aria-current="page">Interaktiv SVG</a></li>
+          <li><a href="./form.html">Formular</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="svg-layout">
+      <div class="svg-placeholder">
+        <svg class="svg-girls" viewBox="0 0 1653 952">
+          <use href="./imgs/svg.svg#Layer_1"></use>
+          <use id="girls-instance" href="./imgs/svg.svg#girls"></use>
+        </svg>
+      </div>
+
+
+      <div class="accordion">
+        <details class="accordion-item" name="accordion" data-position="karneval" open>
+          <summary>Start</summary>
+          <div>
+            <p>Her starter turen ved karnevallet.</p>
+          </div>
+        </details>
+
+        <details class="accordion-item" name="accordion" data-position="modeshow">
+          <summary>Show</summary>
+          <div>
+            <p>Oplev et farverigt show med inspiration fra karneval, forskellige dansestilarter og masser af energi og
+              bevægelse!</p>
+          </div>
+        </details>
+
+        <details class="accordion-item" name="accordion" data-position="kobenhavn">
+          <summary>Musik</summary>
+          <div>
+            <p>Showet rundes af med en fed koncert med Gilli!</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="footer-content">
+      <h3>VOGUE ON THE MOVE</h3>
+      <p>Mode, kreativitet og fællesskab i hjertet af København. </p>
+
+      <p> © 2026 Vogue on the Move · Alle rettigheder forbeholdes.</p>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
